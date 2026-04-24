@@ -5,112 +5,92 @@
 }
 
 body{
-    font-family:'Poppins', sans-serif;
-    background:#f5f5f5;
+    background:#ffffff;
+    font-family:'Raleway', sans-serif;
 }
 
-.hero{
-    position:relative;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-    background:url('FUNDO.jpg') center center/cover no-repeat;
-}
-
-.overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(255,255,255,0.55);
-}
-
-.content{
-    position:relative;
-    z-index:2;
+.opiniao{
     width:100%;
-    max-width:430px;
+    max-width:1400px;
+    margin:auto;
+    padding:40px 20px 80px;
     text-align:center;
 }
 
-/* FOTO */
-.foto-container{
-    margin-bottom:18px;
+/* IMAGEM */
+.quadro{
+    width:100%;
+    max-width:1200px;
+    margin-bottom:40px;
 }
 
-.foto{
-    width:155px;
-    height:155px;
-    object-fit:cover;
-    border-radius:50%;
-    border:4px solid #ffffff;
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+/* FORM */
+.form-opiniao{
+    width:100%;
+    max-width:1100px;
+    margin:auto;
 }
 
-/* NOME NO LUGAR DO LOGO */
-.nome{
-    font-family:'Montserrat','Raleway',sans-serif;
-    font-weight:300;
-    font-size:22px;
-    text-transform:uppercase;
-    letter-spacing:8px;
-    color:#050505;
-    margin-bottom:20px;
-    line-height:1.5;
+/* TEXTAREA */
+textarea{
+    width:100%;
+    height:260px;
+    border:2px solid #63b32e;
+    border-radius:28px;
+    padding:30px;
+    font-size:24px;
+    font-family:'Raleway', sans-serif;
+    resize:none;
+    outline:none;
+    color:#111;
 }
 
-/* TEXTO */
-.frase{
-    font-size:15px;
-    color:#222;
-    line-height:1.6;
-    margin-bottom:22px;
-    padding:0 10px;
+textarea::placeholder{
+    color:#888;
 }
 
-/* LINKS */
-.links{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-}
-
-.links a{
-    text-decoration:none;
-    background:#111;
+/* BOTÃO */
+button{
+    margin-top:25px;
+    background:#63b32e;
     color:#fff;
-    padding:14px 18px;
-    border-radius:14px;
-    font-size:15px;
-    font-weight:500;
+    border:none;
+    padding:16px 45px;
+    font-size:20px;
+    border-radius:50px;
+    cursor:pointer;
     transition:0.3s;
 }
 
-.links a:hover{
-    transform:translateY(-2px);
-    background:#000;
+button:hover{
+    transform:scale(1.05);
+    background:#4e9722;
 }
 
-/* CELULAR PEQUENO */
-@media(max-height:700px){
-    .foto{
-        width:130px;
-        height:130px;
-    }
+/* RESPONSIVO */
+@media(max-width:900px){
 
-    .nome{
-        font-size:18px;
-        letter-spacing:6px;
-        margin-bottom:14px;
-    }
+textarea{
+    height:220px;
+    font-size:20px;
+}
 
-    .frase{
-        font-size:14px;
-        margin-bottom:16px;
-    }
+button{
+    width:100%;
+}
 
-    .links a{
-        padding:12px;
-        font-size:14px;
-    }
+}
+
+@media(max-width:600px){
+
+.opiniao{
+    padding:20px 15px 50px;
+}
+
+textarea{
+    height:180px;
+    font-size:18px;
+    padding:20px;
+}
+
 }
