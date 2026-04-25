@@ -1,5 +1,3 @@
-/* styles.css */
-
 *{
     margin:0;
     padding:0;
@@ -10,15 +8,18 @@ body{
     font-family:'Poppins', sans-serif;
 }
 
-/* FUNDO */
-..video-bg{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:0;
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px 15px;
+    position:relative;
+    overflow:hidden;
 }
+
+/* VIDEO FUNDO */
 .video-bg{
     position:absolute;
     inset:0;
@@ -28,14 +29,15 @@ body{
     z-index:0;
 }
 
-
+/* ESCURECER VIDEO */
 .overlay{
     position:absolute;
     inset:0;
     background:rgba(0,0,0,0.45);
+    z-index:1;
 }
 
-/* CONTAINER */
+/* CONTEUDO */
 .container{
     position:relative;
     z-index:2;
@@ -55,11 +57,9 @@ body{
     width:230px;
     height:230px;
     object-fit:cover;
-    object-position:center top;
     border-radius:20px;
     border:4px solid #fff;
     box-shadow:0 12px 30px rgba(0,0,0,0.25);
-    display:block;
 }
 
 /* TEXTO */
@@ -68,28 +68,14 @@ body{
     font-size:16px;
     line-height:1.7;
     margin-bottom:22px;
-    text-shadow:0 2px 8px rgba(0,0,0,0.35);
 }
 
 /* NOME */
 .nome{
     font-family:'Montserrat', sans-serif;
     font-size:32px;
-    font-weight:700;
     color:#fff;
-    letter-spacing:3px;
     margin-bottom:18px;
-}
-
-/* BARRAS */
-.badge{
-    background:#fff;
-    color:#111;
-    padding:15px;
-    border-radius:14px;
-    font-size:16px;
-    font-weight:600;
-    margin-bottom:12px;
 }
 
 /* LINKS */
@@ -108,11 +94,6 @@ body{
     border-radius:14px;
     font-size:16px;
     font-weight:600;
-    transition:0.25s;
-}
-
-.links a:hover{
-    transform:translateY(-3px);
 }
 
 /* FORM */
@@ -123,16 +104,11 @@ body{
 }
 
 .opiniao textarea{
-    width:100%;
     min-height:130px;
-    resize:none;
     border:none;
     border-radius:18px;
     padding:18px;
-    font-size:15px;
-    font-family:'Poppins', sans-serif;
-    outline:none;
-    background:#fff;
+    resize:none;
 }
 
 .opiniao button{
@@ -141,29 +117,6 @@ body{
     border:none;
     padding:15px;
     border-radius:14px;
-    font-size:16px;
     font-weight:600;
     cursor:pointer;
-}
-
-.opiniao button:hover{
-    background:#08722b;
-}
-
-/* RESPONSIVO */
-@media(max-width:480px){
-
-    .foto{
-        width:190px;
-        height:190px;
-    }
-
-    .nome{
-        font-size:26px;
-    }
-
-    .bio{
-        font-size:15px;
-    }
-
 }
