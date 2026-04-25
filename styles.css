@@ -63,12 +63,13 @@ body{
 }
 
 .logo{
-    width:1100px;
-    max-width:none;
+    width:1400px;
+    max-width:140%;
     height:auto;
     display:block;
-    margin:150px auto 90px auto;
+    margin:25px auto 25px auto;
 }
+
 
 
 
