@@ -13,12 +13,12 @@ body{
 /* FUNDO */
 .hero{
     min-height:100vh;
-    background:url('./FUNDO.jpeg') center center/cover no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
     padding:30px 15px;
     position:relative;
+    overflow:hidden;
 }
 
 .overlay{
