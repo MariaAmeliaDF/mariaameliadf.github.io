@@ -70,14 +70,17 @@ body{
     margin:20px auto 28px auto;
 }
 
-/* CELULAR */
-@media (max-width: 768px){
+/* CELULAR 9:16 */
+@media screen and (max-width: 768px){
 
     .logo{
-        width:320px;
-        max-width:88%;
-        margin:18px auto 24px auto;
+        width:280px;
+        max-width:75vw;
+        height:auto;
+        display:block;
+        margin:18px auto 22px auto;
     }
+
 
 }
 
