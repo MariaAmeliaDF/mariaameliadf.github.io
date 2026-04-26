@@ -37,7 +37,7 @@ body{
     z-index:1;
 }
 
-/* CONTEÚDO */
+/* CONTAINER */
 .container{
     position:relative;
     z-index:2;
@@ -110,20 +110,36 @@ body{
     color:#fff !important;
 }
 
-/* FORM */
+/* FORMULÁRIO */
 .opiniao{
     display:flex;
     flex-direction:column;
     gap:12px;
+    margin-top:10px;
+}
+
+.titulo-formulario{
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:8px;
+    text-shadow:0 3px 10px rgba(0,0,0,0.35);
+}
+
+.opiniao input,
+.opiniao textarea{
+    width:100%;
+    border:none;
+    border-radius:18px;
+    padding:16px;
+    font-size:15px;
+    font-family:'Poppins', sans-serif;
+    outline:none;
 }
 
 .opiniao textarea{
     min-height:130px;
-    border:none;
-    border-radius:18px;
-    padding:18px;
     resize:none;
-    font-family:'Poppins', sans-serif;
 }
 
 .opiniao button{
@@ -132,6 +148,7 @@ body{
     border:none;
     padding:15px;
     border-radius:14px;
+    font-size:16px;
     font-weight:600;
     cursor:pointer;
     transition:0.3s;
@@ -141,7 +158,7 @@ body{
     background:#08752c;
 }
 
-/* CELULAR 9:16 */
+/* CELULAR */
 @media screen and (max-width:768px){
 
     .container{
@@ -166,6 +183,10 @@ body{
     .links a{
         font-size:15px;
         padding:14px;
+    }
+
+    .titulo-formulario{
+        font-size:19px;
     }
 
 }
