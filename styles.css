@@ -1,18 +1,27 @@
-body {
+/* RESET */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* HERO */
+/* HERO (estrutura principal) */
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
-/* VÍDEO */
+/* VÍDEO DE FUNDO */
 .video-bg {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -23,16 +32,18 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.55);
 }
 
-/* CONTEÚDO */
+/* CONTAINER */
 .container {
   position: relative;
   z-index: 2;
-  text-align: center;
+  max-width: 420px;
+  margin: 0 auto;
   padding: 20px;
-  color: white;
+  text-align: center;
+  color: #ffffff;
 }
 
 /* FOTO */
@@ -45,7 +56,7 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid white;
+  border: 3px solid #ffffff;
 }
 
 /* LOGO */
@@ -57,22 +68,29 @@ body {
 /* BIO */
 .bio {
   font-size: 14px;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 25px;
 }
 
-/* LINKS PADRÃO (brancos) */
+/* LINKS */
 .links a {
   display: block;
-  background: white;
+  background: #ffffff;
   color: #333;
   padding: 14px;
   margin: 8px 0;
-  border-radius: 10px;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: 500;
+  transition: all 0.25s ease;
 }
 
-/* BOTÃO DESTAQUE (mantendo branco) */
+/* HOVER PADRÃO */
+.links a:hover {
+  transform: scale(1.03);
+}
+
+/* BOTÃO DESTAQUE (📲) */
 .botao.destaque {
   display: flex;
   align-items: center;
@@ -80,34 +98,42 @@ body {
   gap: 8px;
 
   border: 2px solid #22c55e;
-  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.15);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15);
+
+  font-weight: 600;
 }
 
-/* HOVER */
-.links a:hover {
-  transform: scale(1.02);
+/* ÍCONE */
+.botao .icone {
+  font-size: 18px;
 }
 
-/* FORM */
-.opiniao {
-  margin-top: 30px;
+/* LINKS ESPECÍFICOS (opcional refinamento) */
+.link-x {
+  font-weight: 600;
 }
 
-.opiniao input,
-.opiniao textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 6px 0;
-  border-radius: 8px;
-  border: none;
+.link-facebook {
+  font-weight: 600;
 }
 
-.opiniao button {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 10px;
-  background: #22c55e;
-  color: white;
-  font-weight: bold;
+/* RESPONSIVO */
+@media (max-width: 480px) {
+  .logo {
+    width: 150px;
+  }
+
+  .foto {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bio {
+    font-size: 13px;
+  }
+
+  .links a {
+    font-size: 14px;
+    padding: 12px;
+  }
 }
