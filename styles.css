@@ -181,6 +181,16 @@ body{
     box-shadow:0 12px 32px rgba(255,0,0,0.28);
 }
 
+/* NOVO BOTÃO FLICKR */
+.links a[href*="flickr.com"]{
+    border:2px solid #ff0084;
+    background:rgba(255,255,255,0.98);
+}
+
+.links a[href*="flickr.com"]:hover{
+    box-shadow:0 12px 32px rgba(255,0,132,0.25);
+}
+
 /* RESPONSIVO */
 @media(max-width:768px){
 
