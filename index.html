@@ -1,86 +1,231 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SWSSZRRF2S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-SWSSZRRF2S');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maria Amélia</title>
-<link rel="stylesheet" href="styles.css">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<section class="hero">
-    <!-- VIDEO FUNDO -->
-    <video autoplay muted loop playsinline class="video-bg">
-        <source src="FUNDO.mp4" type="video/mp4">
-    </video>
-    <div class="overlay"></div>
-    <div class="container">
-        <!-- FOTO -->
-        <div class="foto-box">
-            <img src="FOTOCAPA.jpg" alt="Maria Amélia" class="foto">
-        </div>
-        <!-- LOGO -->
-        <img src="LOGO.png" alt="Maria Amélia" class="logo">
-        <!-- BIO -->
-        <p class="bio">
-            🏛️ Vice-presidente do PL Mulher DF <br>
-            Pré-candidata a Deputada Federal <br>
-            Política, família e compromisso com Brasília 💚
-        </p>
-        <!-- LINKS -->
-        <div class="links">
-            <a href="https://www.flickr.com/photos/204380075@N06/" target="_blank">
-                <img src="flickr.png" class="icone-img" alt="">
-                <span class="texto">Flickr</span>
-            </a>
-            <a href="https://wa.me/5561920033480" target="_blank">
-                <i class="fa-brands fa-whatsapp icone-fa whatsapp"></i>
-                <span class="texto">WhatsApp</span>
-            </a>
-            <a href="https://instagram.com/mariaamelia.df" target="_blank">
-                <img src="icons8-instagram-50.png" class="icone-img" alt="">
-                <span class="texto">Instagram</span>
-            </a>
-            <a href="https://maria-amelia.xyz/cadastro/8BFA5A71" target="_blank">
-                <img src="icons8-coração-verde-50.png" class="icone-img" alt="">
-                <span class="texto">Faça parte da nossa caminhada!</span>
-            </a>
-           <a href="https://mariaameliadf.github.io/" target="_blank">
-    <span class="icone-emoji">💛</span>
-    <span class="texto">Site Oficial</span>
-            </a>
-            <a href="https://mariaameliadf.github.io/filtro/" target="_blank">
-                <img src="filtro.png" class="icone-img" alt="">
-                <span class="texto">Filtro oficial Maria Amélia</span>
-            </a>
-            <a href="https://www.youtube.com/live/YzzE4SIf-Vc?si=MbQj4hWLe-R0FQAw" target="_blank">
-                <img src="youtube.png" class="icone-img" alt="">
-                <span class="texto">Live lançamento pré-candidatura</span>
-            </a>
-            <a href="https://x.com/mariaameliadf" target="_blank">
-                <img src="icons8-twitterx-50.png" class="icone-img" alt="">
-                <span class="texto">X</span>
-            </a>
-            <a href="https://www.facebook.com/mariaamelia.df.oficial/" target="_blank">
-                <img src="icons8-facebook-50.png" class="icone-img" alt="">
-                <span class="texto">Facebook</span>
-            </a>
-            <a href="https://www.metropoles.com/brasil/confeiteira-de-michelle-confirma-pre-candidatura-a-deputada-federal" target="_blank">
-                <img src="icons8-brasil-50.png" class="icone-img" alt="">
-                <span class="texto">Tá na Mídia</span>
-            </a>
-        </div>
-    </div>
-</section>
-</body>
-</html>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    background:#000;
+    overflow-x:hidden;
+}
+/* HERO */
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    overflow:hidden;
+}
+/* VIDEO FUNDO */
+.video-bg{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:0;
+}
+/* ESCURECIMENTO */
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.58);
+    z-index:1;
+}
+/* CONTAINER CENTRAL */
+.container{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:420px;
+    text-align:center;
+}
+/* FOTO */
+.foto-box{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+.foto{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:24px;
+    border:4px solid #fff;
+    box-shadow:0 12px 35px rgba(0,0,0,0.35);
+}
+/* LOGO */
+.logo{
+    width:300px;
+    max-width:92%;
+    display:block;
+    margin:0 auto 24px auto;
+}
+/* BIO */
+.bio{
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    line-height:1.8;
+    margin-bottom:30px;
+    text-shadow:0 2px 10px rgba(0,0,0,0.45);
+}
+/* LINKS */
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+/* BOTÕES */
+.links a{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    width:100%;
+    padding:16px 18px;
+    border-radius:18px;
+    background:rgba(255,255,255,0.96);
+    text-decoration:none;
+    color:#111;
+    font-size:15px;
+    font-weight:600;
+    transition:all .25s ease;
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 24px rgba(0,0,0,0.22);
+    position:relative;
+    overflow:hidden;
+}
+/* HOVER */
+.links a:hover{
+    transform:translateY(-3px);
+    background:#fff;
+    box-shadow:0 12px 30px rgba(0,0,0,0.30);
+}
+/* EFEITO BRILHO */
+.links a::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:80%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transform:skewX(-20deg);
+    transition:.7s;
+}
+.links a:hover::before{
+    left:130%;
+}
+/* TEXTO */
+.texto{
+    flex:1;
+    text-align:center;
+    margin-right:26px;
+    line-height:1.4;
+}
+/* ÍCONES PNG */
+.icone-img{
+    width:26px;
+    height:26px;
+    object-fit:contain;
+    flex-shrink:0;
+    display:block;
+}
+/* FONT AWESOME */
+.icone-fa{
+    font-size:26px;
+    flex-shrink:0;
+}
+/* EMOJI */
+.icone-emoji{
+    font-size:26px;
+    line-height:1;
+    flex-shrink:0;
+    display:block;
+    width:26px;
+    text-align:center;
+}
+/* WHATSAPP */
+.whatsapp{
+    color:#25D366;
+}
+/* BOTÃO YOUTUBE */
+.links a[href*="youtube.com"]{
+    background:rgba(255,255,255,0.98);
+}
+.links a[href*="youtube.com"]:hover{
+    box-shadow:0 12px 32px rgba(255,0,0,0.28);
+}
+/* RESPONSIVO */
+@media(max-width:768px){
+    .hero{
+        padding:30px 16px;
+    }
+    .container{
+        max-width:360px;
+    }
+    .foto{
+        width:185px;
+        height:185px;
+        border-radius:22px;
+    }
+    .logo{
+        width:240px;
+        margin-bottom:22px;
+    }
+    .bio{
+        font-size:14px;
+        line-height:1.7;
+        margin-bottom:26px;
+    }
+    .links{
+        gap:12px;
+    }
+    .links a{
+        padding:15px 16px;
+        border-radius:16px;
+        font-size:14px;
+    }
+    .texto{
+        margin-right:22px;
+    }
+    .icone-img{
+        width:23px;
+        height:23px;
+    }
+    .icone-fa{
+        font-size:23px;
+    }
+    .icone-emoji{
+        font-size:23px;
+        width:23px;
+    }
+}
+/* CELULARES PEQUENOS */
+@media(max-width:420px){
+    .foto{
+        width:165px;
+        height:165px;
+    }
+    .logo{
+        width:210px;
+    }
+    .texto{
+        font-size:13px;
+        margin-right:18px;
+    }
+    .links a{
+        padding:14px;
+    }
+}
