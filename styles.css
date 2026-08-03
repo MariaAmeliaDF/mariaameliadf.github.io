@@ -147,6 +147,15 @@ body{
     font-size:26px;
     flex-shrink:0;
 }
+/* EMOJI */
+.icone-emoji{
+    font-size:26px;
+    line-height:1;
+    flex-shrink:0;
+    display:block;
+    width:26px;
+    text-align:center;
+}
 /* WHATSAPP */
 .whatsapp{
     color:#25D366;
@@ -197,6 +206,10 @@ body{
     }
     .icone-fa{
         font-size:23px;
+    }
+    .icone-emoji{
+        font-size:23px;
+        width:23px;
     }
 }
 /* CELULARES PEQUENOS */
