@@ -94,7 +94,7 @@ body {
     width: min(100%, 340px);
     height: 132px;
     margin: 0 auto 22px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -115,19 +115,10 @@ body {
     gap: 7px;
 }
 
-.vote {
-    margin: 20px 0 28px;
-    color: var(--gold);
-    font-size: clamp(27px, 3vw, 34px);
-    font-weight: 800;
-    letter-spacing: -.035em;
-    line-height: 1;
-    text-align: center;
-}
-
 .links {
     display: grid;
     gap: 12px;
+    margin-top: 28px;
 }
 
 .links a {
@@ -243,9 +234,6 @@ body {
         margin-bottom: 16px;
     }
 
-    .vote {
-        margin: 18px 0 24px;
-    }
 }
 
 @media (max-width: 420px) {
@@ -278,10 +266,6 @@ body {
         font-size: 12px;
     }
 
-    .vote {
-        margin: 16px 0 22px;
-        font-size: 27px;
-    }
 
     .links a {
         min-height: 58px;
