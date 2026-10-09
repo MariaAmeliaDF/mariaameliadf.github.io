@@ -91,8 +91,8 @@ body {
 
 .logo-option {
     display: block;
-    width: min(100%, 340px);
-    height: 132px;
+    width: min(100%, 380px);
+    height: 148px;
     margin: 0 auto 22px;
     object-fit: contain;
     object-position: center;
@@ -229,8 +229,8 @@ body {
     }
 
     .logo-option {
-        width: min(100%, 285px);
-        height: 108px;
+        width: min(100%, 320px);
+        height: 121px;
         margin-bottom: 16px;
     }
 
@@ -257,8 +257,8 @@ body {
     }
 
     .logo-option {
-        width: min(100%, 260px);
-        height: 96px;
+        width: min(100%, 292px);
+        height: 108px;
         margin-bottom: 12px;
     }
 
